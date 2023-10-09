@@ -125,7 +125,7 @@ const Sidebar = ({
 }) => {
   return (
       <div className="sidebar">
-          <h5> Filter by: </h5>
+          <h6> Filter by: </h6>
           <Filters 
             selectedState={selectedState} 
             setSelectedState={setSelectedState}

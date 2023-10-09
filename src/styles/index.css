@@ -189,7 +189,12 @@ h5{
     padding-top: 4vh; /* Adjust as needed */
     text-transform: uppercase;   
 }
-
+h6{
+    color: #54595f;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: 4vh; 
+}
 .separator {
     margin-left: 0.5vh; /* Adjust as needed */
     margin-right: 0.5vh; /* Adjust as needed */
