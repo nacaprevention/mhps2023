@@ -1,0 +1,242 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+.header-container {
+    position: fixed;
+    top: 0px;
+    left: 0;                
+    width: 100vw;           
+    display: flex;
+    justify-content: space-between;  /* Added this */
+    align-items: center;
+    z-index: 20000;
+    background-color: #181e24;
+}
+#current-heading-container {
+    padding: 10px;  
+    width: 100%; /* This ensures it takes the rest of the width minus the sidebar's width (change 20vw if sidebar width is different) */
+    display: flex;  /* Changes the container to a flexbox container */
+    justify-content: center; /* Centers the content (current-heading) horizontally */
+    align-items: center; /* Centers the content (current-heading) vertically */
+    margin-top: 6vh;
+    margin-right: 2vh;
+}
+.map-header-container {
+    flex: 2;  /* Adjust based on your layout requirements */
+    display: flex;
+    flex-direction: column;
+    margin-left: 20vw;
+}
+
+.current-heading {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 2px;
+    margin-top: 0; /* Remove margin-top to ensure the current-heading is inside the #current-heading-container */
+    font-size: 1.5rem; /* Adjust if you want a bigger font size */
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-right: 2vh;
+}
+
+
+.left-content {
+    display: flex;
+    align-items: center;
+}
+  .logo {
+    width: 40px;     /* Adjust to your preference */
+    margin-right: 5px;  /* Spacing between the logo and the title */
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+.updateTitle {
+    font-weight: bold;
+    margin-left: 1vh; /* Adjust as needed */
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.welcome-text {
+    font-weight: bold;
+    margin-left: 1vh; /* Adjust as needed */
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.naca-home-btn {
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    padding: 5px 10px;
+    color: #ffc802;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; 
+    font-weight: 400;
+    font-size: 1rem;
+    
+}
+.naca-home-btn:hover {
+    background-color: #404446;
+    text-decoration: underline;   /* Ensures underline doesn't appear on hover either */
+}
+.sidebar {
+    position: fixed;
+    padding: 20px;
+    padding-right: 2vh;
+    padding-left: 2vh;
+    border-right: 1px solid #e0e0e0;
+    background-color:#ffffff;
+    padding-top: 12vh;
+    margin-bottom: 0px;
+    padding-left: 8vh;
+    flex: 1; /* Takes up 1 part of the available space */
+    max-width: 25vw; 
+    height: 100vh;
+    overflow-y: auto;
+    overflow: visible;
+    z-index: 10;
+}
+#dropdown-basic-button_filter_location {
+    margin-bottom: 2vh; /* Adjust as needed */
+}
+#submission {
+    padding-top: 8vh; /* Adjust as needed */
+    color: #54595f;
+    font-size: 0.7rem;
+}
+.scrollable-dropdown .dropdown-menu {
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+    color: #54595f;
+    z-index: 10000;
+    position: absolute;
+    background-color: white !important;
+    transform: translate3d(0, 0, 0);
+}
+
+#dropdown-basic-button_filter_service,
+#dropdown-basic-button_filter_population,
+#dropdown-basic-button_filter_location,
+#dropdown-basic-button_filter_state,
+#dropdown-basic-button_filter_lga {
+    background-color: white;
+    color: #54595f;
+    border-radius: 0;
+    border: none;
+    padding-left: 0;   
+    font-size: 0.9rem;
+    overflow: visible;
+    position: relative;
+}
+
+.scrollable-dropdown.non-default-service .btn,
+.scrollable-dropdown.non-default-population .btn,
+.scrollable-dropdown.non-default-location .btn {
+    color: #54595f !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+    padding-bottom: 2px;
+    font-size: 0.9rem;
+    max-width: 200px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: white !important;
+    z-index: 60000;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: white !important;
+}
+
+h1,
+.current-heading,
+h2 {
+    font-weight: bold;
+    color: #54595f;
+    font-size: 1rem;
+    font-weight:900;
+    text-transform: uppercase;
+}
+h3 {
+    color: #54595f;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding-top: 4vh; /* Adjust as needed */
+    text-transform: uppercase;
+}
+h4 {
+    font-weight:900;
+    padding-top: 2vh;
+    color: #54595f;
+}
+
+h5{
+    color: #54595f;
+    font-size: 0.7rem;
+    font-weight: 800;
+    padding-top: 4vh; /* Adjust as needed */
+    text-transform: uppercase;   
+}
+
+.separator {
+    margin-left: 0.5vh; /* Adjust as needed */
+    margin-right: 0.5vh; /* Adjust as needed */
+    color: #54595f;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.holder {
+    display: flex;
+    width: 100%;
+  }
+  
+  .map-container {
+
+    flex: 1; /* Makes the container grow and take available space */
+    display: flex; /* Makes the container a flex parent */
+    justify-content: center; /* Centers the SVG horizontally */
+    align-items: center; /* Centers the SVG vertically */
+  }
+  
+  .map-container svg {
+    width: 800px; /* or desired width */
+    height: 800px; /* or desired height */
+    margin-top: -8vh;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* or whatever height you want */
+}
+
+.container {
+    display: flex;
+}
+
+.main-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.map-tooltip {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    pointer-events: none;
+    position: absolute; 
+}
