@@ -2,6 +2,7 @@
 
 module.exports = {
   siteMetadata: {
+    pathPrefix: "/statusview",
     title: `statusView`,
     siteUrl: `https://www.yourdomain.tld`,
   },
